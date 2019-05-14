@@ -1,0 +1,11 @@
+<h1>People</h1>
+<% @people.each do |person| %>
+    <h2><%= person.first_name %></h2>
+    <h2><%= person.last_name %></h2>
+    <h2><%= person.hair_color %></h2>
+    <h2><%= person.eye_color %></h2>
+    <h2><%= person.gender %></h2>
+    <h2><%= person.alive %></h2>
+    <%= link_to 'Show Person', person_path(person) %>
+<p>Find me in app/views/people/index.html.erb</p>
+<% end %>
